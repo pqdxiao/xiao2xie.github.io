@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# : http://ogp.me/ns/#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>HAKUHODO CN</title>
+
+  
+  
+  <meta name="description" content="">
+  <meta name="keywords" content="HAKUHODO, advertising">
+
+  <!-- OGP -->
+  <meta property="og:title" content="HAKUHODO CN">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://www.hakuhodo-global.com/assets/img/ogp.jpg">
+  <meta property="og:url" content="https://www.hakuhodo.cn/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HAKUHODO CN">
+
+  <!-- styles -->
+  <link href="slick-theme.css" rel="stylesheet" type="text/css" media="all">
+  <link href="slick.css" rel="stylesheet" type="text/css" media="all">
+
+
+  <!-- test用 -->
+  <link href="app.css" rel="stylesheet" type="text/css" media="all">
+  <link href="idx/app.css" rel="stylesheet" type="text/css" media="all">
+
+  
+  <!-- favicon -->
+  <link rel="icon" href="../img/common/favicon.ico">
+  <script>
+    /*
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-56113384-1', 'auto');
+    ga('send', 'pageview');
+    */
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9a0fb559d59c9e83eebbd406c265c17a";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+</head>
+<body>
+  <div class="container_wrap jsc_scrol_view jsc_animate_order top">
+
+    <!-- main visual -->
+    <!-- <div class="main_visual jsc_mv"></div> -->
+
+    
+    <div class="main_visual jsc_mv">
+      <div class="main_visual_slider jsc_mv_slider">
+                  <a href="../../work/red-restaurants-list.html" class="main_visual_slider_image" data-mv-pc-img="/wp_admin/wp-content/uploads/2019/05/KV_20190412_Red-Restaurants-List01_1920px.jpg" data-mv-sp-img="/wp_admin/wp-content/uploads/2019/04/20190408_Red-Restaurants-List01_674px.jpg"></a>
+                  <a href="../../work/subdivided-flat-in-a-lane.html" class="main_visual_slider_image" data-mv-pc-img="/wp_admin/wp-content/uploads/2019/05/KV_Subdivided-Flat_demo_1920x1080.png" data-mv-sp-img="/wp_admin/wp-content/uploads/2019/05/Subdivided-Flat_demo_674x.png"></a>
+                  <a href="../../work/flavourful-ocean-salmon-octopus.html" class="main_visual_slider_image" data-mv-pc-img="/wp_admin/wp-content/uploads/2019/05/KV_sakextako_1920x1080_02.jpg" data-mv-sp-img="/wp_admin/wp-content/uploads/2017/11/SP_Thumbnail_Flavourful-Ocean4_Octopus.jpg"></a>
+                  <a href="../../work/marathon-with-no-start-line.html" class="main_visual_slider_image" data-mv-pc-img="/wp_admin/wp-content/uploads/2019/05/KV_Work_Marathon_1920px.jpg" data-mv-sp-img="/wp_admin/wp-content/uploads/2019/04/20190408_Work_Marathon_with_no_Start_-Line01_674px.jpg"></a>
+              </div>
+
+      <div class="slider_info_area">
+        <div class="jsc_mv_info is_show">
+                      <div class="slider_info">
+              <div class="slider_title">Takasaki City</div>
+              <div class="slider_name">Red Restaurants List</div>
+            </div>
+                      <div class="slider_info">
+              <div class="slider_title">香港社区组织协会（SoCO） </div>
+              <div class="slider_name">小巷劏房</div>
+            </div>
+                      <div class="slider_info">
+              <div class="slider_title">Sushi Sei</div>
+              <div class="slider_name">Flavourful Ocean – Salmon / Octopus</div>
+            </div>
+                      <div class="slider_info">
+              <div class="slider_title">美国家庭人寿保险公司哥伦布分部</div>
+              <div class="slider_name">Marathon With No Start Line</div>
+            </div>
+                    <div class="main_visual_controll">
+            <div class="main_visual_controll_cur jsc_mv_cur"></div>
+            <div class="main_visual_controll_max jsc_mv_max"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script src="../js/kv.js"></script>
+<script id="logoSpVtx" type="x-shader/x-vertex">
+  precision mediump float;
+  uniform float time;
+  uniform vec2 resolution;
+  uniform vec2 typoPos;
+  attribute vec2 texCoord;
+  attribute vec3 fixPosition;
+  attribute float delay;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  float easeQuartInOut(float t) {
+    return t < 0.5 ? 8.0 * pow(t, 4.0) : -8.0 * pow(t - 1.0, 4.0) + 1.0;
+  }
+  
+  void main(){
+    float ratioX = (resolution.x / (2931.0));
+    float ratioY = (resolution.y / (2095.0));
+    float minRatio = min(ratioX , ratioY) * 0.8;
+    float duration = min(max((time - delay) , 0.0)  , 3.0) / 3.0;
+    duration = easeQuartInOut(duration);
+    //- vec2 typoPos = vec2(0.0 , 0.0);
+    opacity = min(duration , 1.0);
+    vTexCoord = texCoord;
+    vec3 fixPositionR = vec3(fixPosition.x * minRatio , fixPosition.y * minRatio , fixPosition.z) / 2.0;
+    vec4 mvPosition = modelViewMatrix * vec4(fixPositionR.x , fixPositionR.y * -1.0 + typoPos.y , fixPositionR.z, 1.0);
+    gl_Position = projectionMatrix * mvPosition;
+  
+  }
+  
+  
+</script>
+<script id="logoSpFrg" type="x-shader/x-fragment">
+  uniform sampler2D tex;
+  uniform float rand;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  void main(){
+    vec4 textureC = texture2D(tex,vec2(vTexCoord.x  , vTexCoord.y));
+    gl_FragColor = textureC * opacity;
+  }
+  
+  
+</script>
+<script id="logoVtx" type="x-shader/x-vertex">
+  precision mediump float;
+  uniform float time;
+  uniform vec2 resolution;
+  uniform vec2 typoPos;
+  attribute vec2 texCoord;
+  attribute vec3 fixPosition;
+  attribute float delay;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  float easeQuartInOut(float t) {
+    return t < 0.5 ? 8.0 * pow(t, 4.0) : -8.0 * pow(t - 1.0, 4.0) + 1.0;
+  }
+  
+  void main(){
+    float ratioX = (resolution.x / (2931.0));
+    float ratioY = (resolution.y / (2095.0));
+    float minRatio = min(ratioX , ratioY) * 0.8;
+    float duration = min(max((time - delay) , 0.0)  , 3.0) / 3.0;
+    duration = easeQuartInOut(duration);
+    //- vec2 typoPos = vec2(0.0 , 0.0);
+    opacity = min(duration , 1.0);
+    vTexCoord = texCoord;
+    vec3 fixPositionR = vec3(fixPosition.x * minRatio , fixPosition.y * minRatio , fixPosition.z);
+    vec4 mvPosition = modelViewMatrix * vec4(fixPositionR.x , fixPositionR.y * -1.0 , fixPositionR.z, 1.0);
+    gl_Position = projectionMatrix * mvPosition;
+  
+  }
+  
+  
+</script>
+<script id="logoFrg" type="x-shader/x-fragment">
+  uniform sampler2D tex;
+  uniform float rand;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  void main(){
+    vec4 textureC = texture2D(tex,vec2(vTexCoord.x  , vTexCoord.y));
+    gl_FragColor = textureC * opacity;
+  }
+  
+</script>
+<script id="partsSpVtx" type="x-shader/x-vertex">
+  precision mediump float;
+  uniform vec2 resolution;
+  uniform vec2 typoPos;
+  uniform float time;
+  //- 最終座標
+  attribute vec3 fixPosition;
+  //- 初期座標
+  attribute vec3 initialPosition;
+  //- 補完座標
+  attribute vec3 completionPosition;
+  
+  attribute float delay;
+  attribute float rotate;
+  
+  attribute vec2 texCoord;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  float easeQuartOut(float t){
+    return 1.0 - pow(1.0 - t, 4.0);
+  }
+  
+  
+  float easeQuartInOut(float t) {
+    return t < 0.5 ? 8.0 * pow(t, 4.0) : -8.0 * pow(t - 1.0, 4.0) + 1.0;
+  }
+  vec3 getRotate(vec3 p, float angle, vec3 axis){
+      vec3 a = normalize(axis);
+      float s = sin(angle);
+      float c = cos(angle);
+      float r = 1.0 - c;
+      mat3 m = mat3(
+          a.x * a.x * r + c,
+          a.y * a.x * r + a.z * s,
+          a.z * a.x * r - a.y * s,
+          a.x * a.y * r - a.z * s,
+          a.y * a.y * r + c,
+          a.z * a.y * r + a.x * s,
+          a.x * a.z * r + a.y * s,
+          a.y * a.z * r - a.x * s,
+          a.z * a.z * r + c
+      );
+      return m * p;
+  }
+  
+  
+  void main(){
+    float scale = 5.0;
+    float ratioX = (resolution.x / (2931.0));
+    float ratioY = (resolution.y / (2095.0));
+    float minRatio = min(ratioX , ratioY) * 0.8;
+    float duration = min(max((time - delay) , 0.0)  , 3.0) / 3.0;
+    duration = easeQuartOut(duration);
+    //- if(duration > 0.999) duration = 1.0;
+    //- vec2 typoPos = vec2(0.0 , 0.0);
+    opacity = min(duration , 1.0);
+    vec3 fixPositionR = vec3(fixPosition.x * minRatio , fixPosition.y * minRatio , fixPosition.z);
+    vTexCoord = texCoord;
+    vec3 hPositionDistance = (initialPosition - completionPosition);
+    vec3 endPositionDistance = (fixPositionR - completionPosition);
+    vec3 fDistance = (endPositionDistance * duration) + (hPositionDistance * (1.0 - duration));
+    vec3 nPos = (fDistance * duration + completionPosition) / 2.0;
+    vec3 rotateMtx = getRotate(nPos , (rotate * (1.0 - duration)) , vec3(1.0, 1.0, 1.0));
+    vec4 mvPosition = modelViewMatrix * vec4(rotateMtx.x + typoPos.x , rotateMtx.y * -1.0 + typoPos.y , rotateMtx.z, 1.0);
+    gl_Position = projectionMatrix * mvPosition;
+  }
+  
+  
+</script>
+<script id="partsSpFlg" type="x-shader/x-fragment">
+  uniform sampler2D partsTex;
+  uniform float rand;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  void main(){
+    vec4 textureC = texture2D(partsTex,vec2(vTexCoord.x  , vTexCoord.y));
+    gl_FragColor = textureC * opacity;
+  }
+  
+  
+</script>
+<script id="partsVtx" type="x-shader/x-vertex">
+  precision mediump float;
+  uniform vec2 resolution;
+  uniform vec2 typoPos;
+  uniform float degree;
+  uniform float time;
+  //- 最終座標
+  attribute vec3 fixPosition;
+  //- 初期座標
+  attribute vec3 initialPosition;
+  //- 補完座標
+  attribute vec3 completionPosition;
+  attribute float delay;
+  attribute float rotate;
+  attribute vec2 texCoord;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  
+  
+  float easeQuartInOut(float t) {
+    return t < 0.5 ? 8.0 * pow(t, 4.0) : -8.0 * pow(t - 1.0, 4.0) + 1.0;
+  }
+  float easeQuartOut(float t){
+    return 1.0 - pow(1.0 - t, 4.0);
+  }
+  
+  
+  vec3 getRotate(vec3 p, float angle, vec3 axis){
+      vec3 a = normalize(axis);
+      float s = sin(angle);
+      float c = cos(angle);
+      float r = 1.0 - c;
+      mat3 m = mat3(
+          a.x * a.x * r + c,
+          a.y * a.x * r + a.z * s,
+          a.z * a.x * r - a.y * s,
+          a.x * a.y * r - a.z * s,
+          a.y * a.y * r + c,
+          a.z * a.y * r + a.x * s,
+          a.x * a.z * r + a.y * s,
+          a.y * a.z * r - a.x * s,
+          a.z * a.z * r + c
+      );
+      return m * p;
+  }
+  
+  
+  void main(){
+    float scale = 5.0;
+    float ratioX = (resolution.x / (2931.0));
+    float ratioY = (resolution.y / (2095.0));
+    float aspect = 2931.0 / 2095.0;
+    float resAspect = resolution.x / resolution.y;
+    float minRatio;
+  
+    if(aspect > resAspect){
+      // 縦幅がでかい
+      minRatio = ratioX * 0.8;
+    }else{
+      // 横幅がでかい
+      minRatio = ratioY * 0.8;
+    }
+    float xx = cos(degree * 3.1415926535897932384626433832795 / 180.0) * 2931.0;
+    float zz = sin(degree * 3.1415926535897932384626433832795 / 180.0);
+  
+    float duration = min(max((time - delay) , 0.0)  , 1.7) / 1.7;
+    duration = easeQuartOut(duration);
+    opacity = min(duration , 1.0);
+    vec3 fixPositionR;
+  
+    if(degree == 0.0){
+      fixPositionR = vec3((fixPosition.x)  * minRatio , (fixPosition.y + typoPos.y) * minRatio , fixPosition.z * minRatio);
+  
+    }else if(degree == 36.0){
+      fixPositionR = getRotate(vec3((fixPosition.x + (2931.0 - xx) * 1.5) * minRatio , (fixPosition.y + typoPos.y) * minRatio , (fixPosition.z) * minRatio ) , degree * (3.1415926535897932384626433832795 / 180.0) , vec3(0.0 , 1.0 , 0.0));
+  
+    }else if(degree == -28.0){
+      fixPositionR = getRotate(vec3((fixPosition.x - (2931.0 - xx) * 1.5) * minRatio, (fixPosition.y + typoPos.y) * minRatio , (fixPosition.z) * minRatio ) , degree * (3.1415926535897932384626433832795 / 180.0) , vec3(0.0 , 1.0 , 0.0));
+    }else{
+      fixPositionR = getRotate(vec3((fixPosition.x + (2931.0 - xx) * 1.5) * minRatio , (fixPosition.y + typoPos.y) * minRatio , (fixPosition.z) * minRatio ) , degree * (3.1415926535897932384626433832795 / 180.0) , vec3(0.0 , 1.0 , 0.0));
+  
+    }
+  
+  
+    fixPositionR = vec3((fixPosition.x)  * minRatio , (fixPosition.y) * minRatio , fixPosition.z * minRatio);
+  
+    // fixPositionR = getRotate(vec3((fixPosition.x + (2931.0 - xx) * 1.5 + typoPos.x) * minRatio , (fixPosition.y + typoPos.y) * minRatio , (fixPosition.z) * minRatio ) , degree * (3.1415926535897932384626433832795 / 180.0) , vec3(0.0 , 1.0 , 0.0));
+  
+    // vec3 fixPositionR = vec3((fixPosition.x)  * minRatio , (fixPosition.y + typoPos.y) * minRatio , fixPosition.z * minRatio);
+  
+    vTexCoord = texCoord;
+    vec3 hPositionDistance = (initialPosition - completionPosition);
+    vec3 endPositionDistance = (fixPositionR - completionPosition);
+    vec3 fDistance = (endPositionDistance * duration) + (hPositionDistance * (1.0 - duration));
+    vec3 nPos = (fDistance * duration + completionPosition);
+    vec3 rotateMtx = getRotate(nPos , (rotate * (1.0 - duration)) , vec3(1.0, 1.0, 1.0));
+    vec4 mvPosition = modelViewMatrix * vec4(rotateMtx.x , rotateMtx.y * -1.0 , rotateMtx.z, 1.0);
+    // vec4 mvPosition = modelViewMatrix * vec4(rotateMtx.x , rotateMtx.y * -1.0 , rotateMtx.z, 1.0);
+    gl_Position = projectionMatrix * mvPosition;
+  }
+  
+  
+  
+  
+</script>
+<script id="partsFlg" type="x-shader/x-fragment">
+  uniform sampler2D partsTex;
+  varying vec2 vTexCoord;
+  varying float opacity;
+  void main(){
+    vec4 textureC = texture2D(partsTex,vec2(vTexCoord.x  , vTexCoord.y));
+    gl_FragColor = textureC * opacity;
+  }
+  
+  
+  
+  
+</script>
+<div id="keyvisual" style="position:fixed;top:0;left:0;width :100%; height: 100%; z-index:999; background-color:white;">
+  <div id="skipPcBtn" style="position:fixed;bottom:20px;right:20px;display:none;"><a href="javascript:void(0)"><img class="pc_btn" src="../img/idx/kv/kv_skip.png"/></a></div>
+  <div id="regacy" style="display :none;"><img src="../img/idx/kv/keyvisual.jpg" style="width :100%; height:auto;"/></div>
+  <div id="skipSpBtn" style="width:13%;position:fixed;bottom:20px;right:20px;display:none;"><a href="javascript:void(0)"><img class="sp_btn" src="../img/idx/kv/kv_sp_skip.png" style="width:100%;height:auto;"/></a></div>
+  <div id="regacy_sp" style="display :none;"><img src="../img/idx/kv/keyvisual.jpg"/></div>
+</div><img src="../img/idx/kv/typo_parts3.png" style="display:none;"/><img src="../img/idx/kv/h_logo.jpg" style="display:none;"/>
+<div class="container">
+  
+<header class="header">
+  <div class="header_logo"><a href="../../work/rice-code/index.html"><img src="../img/common/icn/header_logo.png"/></a></div>
+  <div class="header_nav"><a class="header_inquiries jsc_smooth_scroll_trigger" href="../../work/rice-code/index.html#contact_us" data-smooth_scroll-target="contact_us">联系</a>
+    <div class="header_lang">
+      <ul class="lang_list">
+        <li><a href="http://www.hakuhodo.co.jp/" target="_blank">日本語</a></li>
+        <li><a href="https://www.hakuhodo-global.com/" target="_blank">English</a></li>
+      </ul>
+    </div>
+    <div class="header_search"><a href="../../search/index.html"><img src="../img/common/icn/header_search.png"/></a></div>
+    <div class="header_menu js-header_menu"><span></span><span></span><span></span></div>
+  </div>
+  <div class="side_menu">
+    <ul class="side_menu_list">
+      <li><a href="../../difference/index.html">我们的优势</a></li>
+      <li><a href="../../work/index.html">我们的工作成果</a></li>
+      <li><a href="../../news/index.html">新闻与洞察</a></li>
+      <li><a href="../../people/index.html">我们的人才</a></li>
+      <li><a href="../../network/index.html">全球运营网络</a></li>
+      <li><a href="../../about/index.html">关于博报堂</a></li>
+    </ul>
+    <div class="u-show_sp">
+      <div class="side_more jsc_side_more_trigger">LANGUAGE
+        <div class="side_more_contents jsc_side_more_target">
+          <ul>
+            <li class="side_more_item"><a href="http://www.hakuhodo.co.jp/" target="_blank">日本語</a></li>
+            <li class="side_more_item"><a href="https://www.hakuhodo-global.com/" target="_blank">English</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="side_sns"><a class="side_sns_wechat" href="javascript:void(0)" onClick="openWechatQr()"><img src="../img/common/icn/side_wechat.png"/></a></div>
+    </div>
+  </div>
+</header>
+
+  <!-- Company Copy -->
+
+  <div class="jsc_scroll_view_target jsc_animate_order_item" data-animate-order="fadeUp">
+    <div class="c-outside company_copy">
+      <p>博报堂成立于1895年，是全球十大整合营销解决方案公司。公司在20个国家和地区设有150多家办事处，与3000多个客户保持长期合作，某些合作关系甚至持续长达60多年。我们凭借着国际一流的研究方法以及大数据和数字专业知识可以为合作的每位客户提供创新、富有创意的解决方案。</p>
+    </div>
+    <div class="c-outside"><a class="difference_more c-link_frame c-frame_arrow" href="../../difference/index.html">博报堂的优势</a></div>
+  </div>
+
+
+  <!-- Our Work -->
+
+  <div class="our_work p-panel jsc_panel jsc_scroll_view_target jsc_animate_order_item panel_more c-content_1" data-animate-order="panelfadeUp">
+    <div class="p-panel_head">
+      <h2>我们的工作成果</h2>
+      <div class="p-panel_more u-show_pc"><a class="c-link_frame c-frame_arrow c-frame_white" href="../../work/index.html">查看更多信息</a></div>
+      <div class="p-panel_controll">
+        <div class="p-panel_next jsc_panel_next is_show"></div>
+        <div class="p-panel_prev jsc_panel_prev"></div>
+      </div>
+    </div>
+
+    <div class="jsc_panel_list p-panel_area">
+                    
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2019/05/Thumb_674x674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/subdivided-flat-in-a-lane.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">香港社区组织协会（SoCO）</div>
+                                <div class="c-panel_desc">小巷劏房</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/20190408_Work_Marathon_with_no_Start_-Line01_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/marathon-with-no-start-line.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">美国家庭人寿保险公司哥伦布分部</div>
+                                <div class="c-panel_desc">Marathon With No Start Line</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/1904Work_Vegibus_01_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/vegi-bus.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Vegibus Inc.</div>
+                                <div class="c-panel_desc">VEGI-BUS</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/02_201904_workJMS_love_674p-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/10-sec-drama-the-stop-line-of-love-campaign.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">jms</div>
+                                <div class="c-panel_desc">10 Sec. Drama: The Stop Line of Love Campaign</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/20190408_Red-Restaurants-List01_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/red-restaurants-list.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Takasaki City</div>
+                                <div class="c-panel_desc">Red Restaurants List</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/Thumbnail_Flavourful-Ocean2_Octopus-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/flavourful-ocean-salmon-octopus.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Sushi Sei</div>
+                                <div class="c-panel_desc">Flavourful Ocean &#8211; Salmon / Octopus</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2019/01/Work20190130_BirdHearing-Test_Thum_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/bird-hearing-test.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Panasonic</div>
+                                <div class="c-panel_desc">Bird Hearing Test</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/11/StarChorus-top_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../work/star-chorus.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Star Flyer, Inc.</div>
+                                <div class="c-panel_desc">Star Lullaby / Star Chorus</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/10/Work_720HoY-top_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../work/720-hours-of-youth.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Y!mobile</div>
+                                <div class="c-panel_desc">720 Hours of Youth</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/Work_Gummy01Date_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/sakeru-gummy.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">UHA Mikakuto Co., Ltd.</div>
+                                <div class="c-panel_desc">Sakeru Gummy</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2019/01/MOOM-top_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../work/moom.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Moom Film Partners</div>
+                                <div class="c-panel_desc">Moom</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/11/subaru-top_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../work/your-story-with.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Subaru Corporation</div>
+                                <div class="c-panel_desc">Your story with</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/09/PPR_img_work_hz_1_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/propilot-park-ryokan.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Nissan Motor Co., Ltd.</div>
+                                <div class="c-panel_desc">ProPILOT Park RYOKAN</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/10/work_locomo-top_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../work/locomo-challenge.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Locomo Challenge Council</div>
+                                <div class="c-panel_desc">Locomo Challenge</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/Work_Pride-Jersey01_674px201807_03-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/pride-jersey.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">AIG Japan Holdings KK</div>
+                                <div class="c-panel_desc">Pride Jersey</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/04/S__2555976-1280x1280-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/obsession-for-smoothness.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Double A</div>
+                                <div class="c-panel_desc">Obsession for Smoothness</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/7c4e866123723e03ef075d660bf377c4.jpg">
+            <a class="c-panel_info_area" href="../../work/伤�%2597%259B�%258B�%2597%2595.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Jakarta Globe</div>
+                                <div class="c-panel_desc">Scars of Misery</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/Drought_674x674-e1526017390735-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/drought.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Greenpeace Malaysia</div>
+                                <div class="c-panel_desc">Drought</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/1807Work_Toyota-Poster-Wallet_01_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/poster-wallet.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">UMW Toyota Motor Sdn. Bhd.</div>
+                                <div class="c-panel_desc">Poster Wallet</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/Newscaster_thum_01_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/247-newscaster.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">NTT docomo, Inc.</div>
+                                <div class="c-panel_desc">24/7 Newscaster</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/07/Work1805_HotelHighway2_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/hotel-highway.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Two Inc.</div>
+                                <div class="c-panel_desc">Hotel Highway</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/Featured-1.jpg">
+            <a class="c-panel_info_area" href="../../work/hidden-violence-photo.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Institut KAPAL Perempuan</div>
+                                <div class="c-panel_desc">Hidden Violence Photo</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_10-5.jpg">
+            <a class="c-panel_info_area" href="../../work/tokyo-culture-story.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">BEAMS Co., Ltd.</div>
+                                <div class="c-panel_desc">Tokyo Culture Story</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/GUHK-Thumbnail-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/gu-launch-in-hong-kong.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">GU Hong Kong Apparel Limited</div>
+                                <div class="c-panel_desc">GU – Launch in Hong Kong</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/UN1x1-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/unkai-navi.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Mitsubishi Motors Corporation</div>
+                                <div class="c-panel_desc">Unkai Navi</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/CruisingJeans_674_674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/cruising-jeans.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Kaihara Co., Ltd.  </div>
+                                <div class="c-panel_desc">Cruising Jeans</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2018/01/01-.jpg">
+            <a class="c-panel_info_area" href="../../work/makers-mark-display-movie.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Suntory Holdings Limited</div>
+                                <div class="c-panel_desc">Maker&#8217;s Mark Iconic Gallery</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/sky-expedisi_square-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/ekspedisi-langit-nusantara-indonesia-sky-expedition.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">PT. Telekomunikasi Selular</div>
+                                <div class="c-panel_desc">Ekspedisi Langit Nusantara (Indonesia Sky Expedition)</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/06/The-ZODIAC-RE-RACE_1x1-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/the-zodiac-re-race.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">mixi, inc.</div>
+                                <div class="c-panel_desc">The Zodiac Re-Race</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/Cogy_674x674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/cogy-wheelchair.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">TESS Co., Ltd.</div>
+                                <div class="c-panel_desc">Cogy wheelchair</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2018/04/SuntoryIyemon_Thumbnail-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/the-next-stage-of-iyemon.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Suntory Beverage & Food Limited</div>
+                                <div class="c-panel_desc">The next stage of Iyemon</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/718847d26f81c30ef72ef8afc5927b8f.jpg">
+            <a class="c-panel_info_area" href="../../work/kappa-sushi-modern-pop-sushi-campaign.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Kappa Create Co., Ltd.</div>
+                                <div class="c-panel_desc">Kappa Sushi – Modern Pop Sushi Campaign</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/12/Voice_ChocolateSquare4-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/voice-chocolate.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">NTT docomo, Inc.</div>
+                                <div class="c-panel_desc">Voice Chocolate</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/12/8af3179f81f8790547c4052f8f95eeb2-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/one-month-daddy-and-son-days-without-mommy.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">U-CAN, Inc.</div>
+                                <div class="c-panel_desc">One Month &#8220;Daddy and Son-Days Without Mommy&#8221;</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2018/04/Board-674x674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/kosanaarai-what-is-this-commercial.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Texas Chicken (PTT Public Company Limited)</div>
+                                <div class="c-panel_desc">Kosanaarai（这是什么广告？）</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_1-5.jpg">
+            <a class="c-panel_info_area" href="../../work/gravity-cat.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Sony Interactive Entertainment Inc.</div>
+                                <div class="c-panel_desc">Gravity Cat</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2017/12/LiveJacket1Square-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/live-jacket.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">A-Sketch</div>
+                                <div class="c-panel_desc">LIVE JACKET</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/1_square.jpg">
+            <a class="c-panel_info_area" href="../../work/fake-news.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">PT. Telekomunikasi Selular</div>
+                                <div class="c-panel_desc">Fake News</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/index-4-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/panicoupon.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Culture Convenience Club Co., Ltd.</div>
+                                <div class="c-panel_desc">Panicoupon</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_11-5.jpg">
+            <a class="c-panel_info_area" href="../../work/rice-code.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Inakadate Village</div>
+                                <div class="c-panel_desc">Rice-Code</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_8-1-5.jpg">
+            <a class="c-panel_info_area" href="../../work/the-photogenic-beer.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Kirin Brewery Co., Ltd.</div>
+                                <div class="c-panel_desc">The Photogenic Beer</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_4-1-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/loving-eyes.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Toyota Motor Corporation</div>
+                                <div class="c-panel_desc">Loving Eyes</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2017/10/Prayer-for-Good_square-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/prayer-for-good.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">PT Sompo Insurance Indonesia</div>
+                                <div class="c-panel_desc">Prayer for Good</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2017/10/Personal-Innovation-Act_for-SP-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/personal-innovation-act.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">SoftBank Corp.</div>
+                                <div class="c-panel_desc">Personal Innovation Act</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2017/10/SourFacedMan_Woman-square-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/sour-face-manwoman.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">PT United Family Food</div>
+                                <div class="c-panel_desc">Sour-Faced Man/Woman</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_2-1-5.jpg">
+            <a class="c-panel_info_area" href="../../work/pintrash.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">River Cleaning Activation</div>
+                                <div class="c-panel_desc">Pintrash</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_12-5.jpg">
+            <a class="c-panel_info_area" href="../../work/liquid-navy-seals.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">PT Kimia Farma (Persero) Tbk</div>
+                                <div class="c-panel_desc">Liquid Navy Seals</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/index-1-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/hands-on-search.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Yahoo! Japan</div>
+                                <div class="c-panel_desc">Hands on Search</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/index-7-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/digital-lullaby.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Lotte Co., Ltd.</div>
+                                <div class="c-panel_desc">Digital Lullaby</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_3-1-5.jpg">
+            <a class="c-panel_info_area" href="../../work/hand-meets-hand.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Tiffany & Co.</div>
+                                <div class="c-panel_desc">Hand Meets Hand</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_5-1-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/playful-sound-shoes-fumm.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">KDDI au Unlimited Future Laboratory</div>
+                                <div class="c-panel_desc">Playful Sound Shoes &#8220;Fumm&#8221;</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_7-1-5.jpg">
+            <a class="c-panel_info_area" href="../../work/native-mobile-music-video.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">King Record Co., Ltd.</div>
+                                <div class="c-panel_desc">Native Mobile Music Video</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_9-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/intelligent-parking-chair.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Nissan Motor Co., Ltd.</div>
+                                <div class="c-panel_desc">Intelligent Parking Chair</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_13-5.jpg">
+            <a class="c-panel_info_area" href="../../work/dentapple.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Matsumoto Apple Association</div>
+                                <div class="c-panel_desc">DENTAPPLE</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_14-5.jpg">
+            <a class="c-panel_info_area" href="../../work/just-by-falling-down-winter.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Oak Lawn Marketing, Inc.</div>
+                                <div class="c-panel_desc">Just By Falling Down Winter</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_15-5.jpg">
+            <a class="c-panel_info_area" href="../../work/talkable-vegetables.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">HUG Mart</div>
+                                <div class="c-panel_desc">Talkable Vegetables</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+
+              
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_16-6.jpg">
+            <a class="c-panel_info_area" href="../../work/exobiotanica.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Azuma Makoto Kaju Kenkyusho (AMKK)</div>
+                                <div class="c-panel_desc">EXOBIOTANICA</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+              
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_6-1-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../work/the-curator.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">SC ASSET</div>
+                                <div class="c-panel_desc">The Curator</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+
+      
+    </div>
+
+    <div class="c-outside our_work_more u-show_sp"><a class="c-link_frame c-frame_arrow c-frame_white" href="../../work/index.html">查看更多信息</a></div>
+  </div>
+
+
+  <!-- News & Insights -->
+
+  <div class="jsc_scroll_view_target jsc_animate_order_item" data-animate-order="fadeUp">
+    <div class="news_insight c-content_1 jsc_news_list">
+      <div class="c-outside news_insight_head">
+        <h2>新闻与洞察</h2>
+      </div>
+
+
+                                                                                                                                                                                                                                                                                                    
+
+      <div class="news_insight_list_wrap">
+        <div class="news_insight_img_list_area jsc_news_list_imgarea">
+          <ul class="news_insight_img_list">
+                                      <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="0">
+                <img src="../../wp_admin/wp-content/uploads/2019/05/ADCaward_674x674cn-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="1">
+                <img src="../../wp_admin/wp-content/uploads/2019/05/RL_GIMC_674x674r-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="2">
+                <img src="../../wp_admin/wp-content/uploads/2019/05/20190426_RL_Devi_674px-300x300.jpg">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="3">
+                <img src="../../wp_admin/wp-content/uploads/2019/05/MCHack2_suda_674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="4">
+                <img src="../../wp_admin/wp-content/uploads/2019/04/190418_mama-univ_top674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="5">
+                <img src="../../wp_admin/wp-content/uploads/2019/04/201904_Yan_01_0323_674px-1-300x300.jpg">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="6">
+                <img src="../../wp_admin/wp-content/uploads/2019/04/190412_ADFEST2019_H-Seminar_top-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="7">
+                <img src="../../wp_admin/wp-content/uploads/2019/04/20190410Rl_ADFEST_0295_674px-300x300.jpg">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="8">
+                <img src="../../wp_admin/wp-content/uploads/2019/03/e6de598d234d41da8177e488d196bd01-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="9">
+                <img src="../../wp_admin/wp-content/uploads/2019/03/MCHack_hori-top_674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="10">
+                <img src="../../wp_admin/wp-content/uploads/2019/03/adfest2019_jury674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="11">
+                <img src="../../wp_admin/wp-content/uploads/2019/02/15f1117783cdd2375433c38059310b7e-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="12">
+                <img src="../../wp_admin/wp-content/uploads/2019/03/DDM-waida_674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="13">
+                <img src="../../wp_admin/wp-content/uploads/2019/02/crafter-top_7640-674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="14">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/OJT-vietnam_top674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="15">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/190124RL_HILL_674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="16">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/OJT-repot-mly_top674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="17">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/ojt-report-nesia_674x674-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="18">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/20190107_mizushima_Thum674px-300x300.png">
+              </li>
+                                        <li class="news_insight_img_item jsc_news_list_target is_active" data-ni-image-change-value="19">
+                <img src="../../wp_admin/wp-content/uploads/2019/01/181227RL_CampaingAOY_Thum-300x300.png">
+              </li>
+                                    </ul>
+        </div>
+
+        <div class="news_insight_info_area jsc_news_list_infoarea">
+          <ul class="news_insight_info_list">
+                                      <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/hakuhodo-group-awarded-3-best-of-discipline-at-adc-awards.html" target="_blank" data-ni-image-change-key="0">
+                  <div class="news_insight_date">2019年5月15日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">博报堂集团荣获第98届ADC年度奖3项类别最佳奖、9项金奖、1项银奖、1项铜奖</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/�%258D%259A�%258A��%2582�%258E中�%259B��%259C��%259C%259Fno1�%259A%2584综�%2590%2588广�%2591%258A�%259B%2586�%259B��%2580%2580广�%259C�%259C%2581广�%2591%258A.html" target="_blank" data-ni-image-change-key="1">
+                  <div class="news_insight_date">2019年5月13日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">博报堂与中国本土No.1的综合广告集团　广东省广告集团股份有限公司签订战略合作伙伴协议</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/devi-attamimi-appointed-new-institute-director-of-hill-asean.html" target="_blank" data-ni-image-change-key="2">
+                  <div class="news_insight_date">2019年4月26日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">Devi Attamimi 就任博报堂生活综合研究所（东盟）所长</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/my-creative-hack-2-manga-drawing-thinking.html" target="_blank" data-ni-image-change-key="3">
+                  <div class="news_insight_date">2019年4月22日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">我的创意黑客2：漫画绘画思维</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/hakuhodo-mama-univ-work-parenting-balance-workshop-report.html" target="_blank" data-ni-image-change-key="4">
+                  <div class="news_insight_date">2019年4月18日</div>
+                  <div class="news_insight_category Events">活动</div>
+                  <div class="news_insight_title">博报堂妈咪大学（Hakuhodo Mama Univ.）：工作和育儿平衡研讨会报告</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/yang-yeo-apac-creative-kaiju-interview-at-adfest-2019.html" target="_blank" data-ni-image-change-key="5">
+                  <div class="news_insight_date">2019年4月15日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">“创意怪兽”杨耀淙在2019亚太广告节（ADFEST 2019）上接受专访</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/hakuhodo-seminar-at-adfest-2019-viva-commercial-films.html" target="_blank" data-ni-image-change-key="6">
+                  <div class="news_insight_date">2019年4月12日</div>
+                  <div class="news_insight_category Events">活动</div>
+                  <div class="news_insight_title">2019年亚太广告节（ADFEST 2019）博报堂专题研讨会：广告影片万岁！！！！！</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/�%258D%259A�%258A��%2582�%259B%2586�%259B��%258C�%259C�第22�%258A�%259A太广�%2591%258A�%258A%2582�%2588adfest-2019�%2589-�%258D��%258E�lotus-roots类.html" target="_blank" data-ni-image-change-key="7">
+                  <div class="news_insight_date">2019年4月10日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">博报堂集团，在第22届亚太广告节（ADFEST 2019） 荣获LOTUS ROOTS类奖1项、金奖7项、银奖10项、铜奖9项</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/data-driven-marketing-overseas-adapt-to-succeed.html" target="_blank" data-ni-image-change-key="8">
+                  <div class="news_insight_date">2019年3月15日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">海外数据驱动营销：适者成功</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/my-creative-hack-1-taking-and-sharing-memos.html" target="_blank" data-ni-image-change-key="9">
+                  <div class="news_insight_date">2019年3月7日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">我的创意秘诀：使用和分享备忘录</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/hakuhodo-group-to-send-three-jury-members-to-adfest-2019.html" target="_blank" data-ni-image-change-key="10">
+                  <div class="news_insight_date">2019年3月7日</div>
+                  <div class="news_insight_category Events">活动</div>
+                  <div class="news_insight_title">博报堂集团将派出三名评委参加“亚太广告节2019”</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/winning-data-driven-marketing-for-chinese-sei-katsu-sha.html" target="_blank" data-ni-image-change-key="11">
+                  <div class="news_insight_date">2019年3月4日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">博报堂DY集团的中国生活者数据驱动营销攻略</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/what-is-sei-katsu-sha-data-driven-marketing.html" target="_blank" data-ni-image-change-key="12">
+                  <div class="news_insight_date">2019年2月22日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">什么是生活者数据驱动营销？</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/craftar-creating-the-future-of-animation-here-and-now.html" target="_blank" data-ni-image-change-key="13">
+                  <div class="news_insight_date">2019年2月7日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">Craftar：此时此地，创作未来的动画</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/finding-new-energy-and-goals-ojt-in-vietnam.html" target="_blank" data-ni-image-change-key="14">
+                  <div class="news_insight_date">2019年1月28日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">寻找新动力和新目标：在越南接受OJT（在职培训）</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/asean-sei-katsu-sha-forum-held-in-bangkok.html" target="_blank" data-ni-image-change-key="15">
+                  <div class="news_insight_date">2019年1月24日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">博报堂生活综研ASEAN发表“THINK FUTURE-FORWARD～技术进步对东盟的生活者有何改变？” ―曼谷举办“东盟生活者论坛”―</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/universal-language-is-not-english-but-insight-ojt-in-malaysia.html" target="_blank" data-ni-image-change-key="16">
+                  <div class="news_insight_date">2019年1月21日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">世界的通用语并非英语，而是洞察力：在马来西亚接受OJT（在职培训）</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/enjoying-the-feeling-of-being-out-of-place.html" target="_blank" data-ni-image-change-key="17">
+                  <div class="news_insight_date">2019年1月17日</div>
+                  <div class="news_insight_category Viewpoints">观点</div>
+                  <div class="news_insight_title">享受身在异地的体验：在印度尼西亚接受OJT（在职培训）</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/�%258A%2593�%258F�%2594%259F活�%2580%2585�%258F%2598�%258C%2596�%259A%2584�%2581�%2585%2586�%258C�%259E�%258E�设计�%2596�价�%2580��%259A%2584社�%259A.html" target="_blank" data-ni-image-change-key="18">
+                  <div class="news_insight_date">2019年1月1日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">抓住生活者变化的征兆，实现设计新价值的社会</div>
+                </a>
+              </li>
+                                        <li class="news_insight_info_item">
+                <a class="news_insight_info jsc_news_list_trigger" href="../../news/hakuhodo-group-wins-3-gold-at-campaigns-agency-of-the-year-awards.html" target="_blank" data-ni-image-change-key="19">
+                  <div class="news_insight_date">2018年12月27日</div>
+                  <div class="news_insight_category News">新闻</div>
+                  <div class="news_insight_title">≪Campaign Asia Pacific≫杂志“Agency of the Year 2018”博报堂集团荣获3项金奖</div>
+                </a>
+              </li>
+                                    </ul>
+        </div>
+      </div>
+      <div class="c-outside news_insight_more u-show_pc"><a class="c-link_frame c-frame_arrow p-top_news_see-more-btn" href="../../news/index.html">查看更多信息</a></div>
+      <div class="c-outside our_work_more u-show_sp"><a class="c-link_frame c-frame_arrow" href="../../news/index.html">查看更多信息</a></div>
+    </div>
+  </div>
+
+
+  <!-- Our People -->
+
+  <div class="our_people p-panel jsc_panel jsc_scroll_view_target jsc_animate_order_item panel_more c-content_1" data-animate-order="panelfadeUp">
+    <div class="p-panel_head">
+      <h2>我们的人才</h2>
+      <div class="p-panel_more u-show_pc"><a class="c-link_frame c-frame_arrow c-frame_white" href="../../people/index.html">查看更多信息</a></div>
+      <div class="p-panel_controll">
+        <div class="p-panel_next jsc_panel_next is_show"></div>
+        <div class="p-panel_prev jsc_panel_prev"></div>
+      </div>
+    </div>
+    <div class="jsc_panel_list p-panel_area">
+                    
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2019/05/201904_People45_Uwe02_GmbH674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/uwe-lucas.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">振作起来，欧洲！</div>
+                                <div class="c-panel_desc">Uwe Lucas</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2019/04/People44_Devi_HNI_674x674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/devi-attamimi.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">梦想推动着我与博报堂网络的发展</div>
+                                <div class="c-panel_desc">Farhana E. Devi Attamimi</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2019/03/People43_20190403Shobit_674px-300x300.png">
+            <a class="c-panel_info_area" href="../../people/shobhit-mathur.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">成为更好的你</div>
+                                <div class="c-panel_desc">Shobhit Mathur</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2019/03/People42_20190319cheil_Lee_674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../people/Seunghun-Lee.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">客户就是我的老师</div>
+                                <div class="c-panel_desc">李承勳</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2019/02/201902_People40_Stanley_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/stanley-gan.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">创意→创新</div>
+                                <div class="c-panel_desc">颜 禧吉</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2019/02/People39_201902_India_Sabuj674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/sabuj-sen-gupta.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">沉默时刻</div>
+                                <div class="c-panel_desc">Sabuj Sen Gupta</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2019/01/wiwi_bnw674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../people/ferti-wiratih.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">携手合作，放飞创想</div>
+                                <div class="c-panel_desc">Ferti Wiratih</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2019/01/cristina_bnw674x674-300x300.png">
+            <a class="c-panel_info_area" href="../../people/cristina-lazard.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">种瓜得瓜，种豆得豆</div>
+                                <div class="c-panel_desc">Cristina Lazard</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+              
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/12/People_YangYeo_mono674x674d-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/yang-yeo.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">注重结果</div>
+                                <div class="c-panel_desc">杨耀淙</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/12/People_Hokari_20181106_gray674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/goro-hokari.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">将“生活者”的理解融入客户的解决方案</div>
+                                <div class="c-panel_desc">帆刈吾郎</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_3-6.jpg">
+            <a class="c-panel_info_area" href="../../people/tom-poynter.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">当东方遇上西方</div>
+                                <div class="c-panel_desc">Tom Poynter</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/11/201811_People_BenTan02_br_glay674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/ben-tan.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">抢夺市场的关键在于争夺年轻新消费群</div>
+                                <div class="c-panel_desc">谭伟彬</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/Liuxin_1x1-e1527065182978-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/�%2588%2598�%258E%2598.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">在无尽的冲突中获得新生</div>
+                                <div class="c-panel_desc">刘莘</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/10/201811people_Mr.kondo_gray674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/nobuaki-kondo.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">健康</div>
+                                <div class="c-panel_desc">近藤暢章</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/JulianSquare.jpg">
+            <a class="c-panel_info_area" href="../../people/julian-kay.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">超越营销传播</div>
+                                <div class="c-panel_desc">Julian Kay</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/09/People_1809Ms.ThalangYai_674px_gray11-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/pranit-na-thalang.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">通过持续的伙伴关系形成合作文化</div>
+                                <div class="c-panel_desc">Pranit Na Thalang</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+              
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/11/People_Iguchi_20181106_gray674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/yuzuru-iguchi.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">积极开发为客户服务的业务</div>
+                                <div class="c-panel_desc">井口禅</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/09/People180925GIANG_HVN_674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/do-truong-giang.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">主要的客户服务：奋斗与服务之间的平衡</div>
+                                <div class="c-panel_desc">Do Truong Giang</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2018/09/People1809Mike-photo674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/�%2599�%2585%258E�%2598%258E.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">最好的创意产生最佳的效果</div>
+                                <div class="c-panel_desc">趙慎明</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/8980d6e7ed883497819213d927e716c3-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/glenn-smith.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">重点放在“出其不意”上</div>
+                                <div class="c-panel_desc">Glenn Smith</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/Work1808_Jayanto_india_674px02_05-300x300.png">
+            <a class="c-panel_info_area" href="../../people/jayanto-banerjee.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">营造有意义的品牌体验</div>
+                                <div class="c-panel_desc">Jayanto Banerjee</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/R.E.Budiastuti_Squareedited.jpg">
+            <a class="c-panel_info_area" href="../../people/rosalia-endang-budiastuti.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">优秀的做事方法是惊人硕果的强大基石</div>
+                                <div class="c-panel_desc">Rosalia Endang Budiastuti</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2018/08/waida02_674x674-1-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/淮�%2594��%2593��%2593%2589.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">无限发展潜力</div>
+                                <div class="c-panel_desc">淮田哲哉</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/07/People_popo674x674px-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/popo-hou.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">Teamwork让每一天充满无限可能</div>
+                                <div class="c-panel_desc">Popo Hou</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+              
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2018/06/nick_674x674-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/nicholas-kosasih.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">永不满足是进步的催化剂</div>
+                                <div class="c-panel_desc">Nicholas Kosasih</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2018/05/Yanagihara_bw_1x1-e1525669084934-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/yasunari-yanagihara.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">营销公司的法务工作需要的是什么？</div>
+                                <div class="c-panel_desc">柳原康成</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2018/04/Koh_BW_square-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/loo-kok-seng.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">通向创造卓越的途径</div>
+                                <div class="c-panel_desc">Loo Kok Seng</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2018/04/Kim-Chun-Hwan-640x640-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/�%2587%2591�%2598��%2584%2595.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">通过“链接：思考”为参与提供解决方案</div>
+                                <div class="c-panel_desc">金春焕</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2018/03/20180327_145338-1-e1522214431803-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/natnika-tanwongprasert.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">高期望的力量</div>
+                                <div class="c-panel_desc">Natnika Tanwongprasert</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/winnieSquare.jpg">
+            <a class="c-panel_info_area" href="../../people/winnie-lam.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">人才赢得比赛，团队赢得冠军</div>
+                                <div class="c-panel_desc">Winnie Lam</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2018/02/Wendy_Square.jpg">
+            <a class="c-panel_info_area" href="../../people/wendy-mcbride.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">变换角色：翻译能为广告公司的客户做什么？</div>
+                                <div class="c-panel_desc">Wendy McBride</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2018/01/5a70fdf96eb57a84c552fbb315d42d25.jpg">
+            <a class="c-panel_info_area" href="../../people/junlin-ye.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">关于中华圈的广告工作</div>
+                                <div class="c-panel_desc">葉俊麟</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+              
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/12/Usagi_IshiiSquare-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/usagi-ishii.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">准备好乘上变化之风</div>
+                                <div class="c-panel_desc">Usagi Ishii</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_4-6.jpg">
+            <a class="c-panel_info_area" href="../../people/masaki-mikami.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">新的地平线</div>
+                                <div class="c-panel_desc">三神正树</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_5-6.jpg">
+            <a class="c-panel_info_area" href="../../people/kentaro-kimura.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">每当我穿过一个边界，我就会发现新的视角</div>
+                                <div class="c-panel_desc">木村健太郎</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/Woon_Hoh_674-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/woon-hoh.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">救救我们吧，创造力，你是我们的唯一希望。</div>
+                                <div class="c-panel_desc">Woon Hoh</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2017/11/Kazuhiro_Suda2square-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/kazuhiro-suda.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">人们想使用的广告</div>
+                                <div class="c-panel_desc">须田和博</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_6">
+            <img src="../../wp_admin/wp-content/uploads/2017/12/Masato-Saito-�%2582��%2583��%2583%258D�%2582��%2583��%2594��%2583%258F-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/masato-saito.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">来自亚洲的新惊喜</div>
+                                <div class="c-panel_desc">斋藤真人</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_7">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_2-6.jpg">
+            <a class="c-panel_info_area" href="../../people/irfan-ramli.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">正能量是一种新能量</div>
+                                <div class="c-panel_desc">Irfan Ramli</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_8">
+            <img src="../../wp_admin/wp-content/uploads/2017/11/Shuntaro_Ito2square-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/shuntaro-ito.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">你好、Namaste、<br>An nyeong ha se yo!</div>
+                                <div class="c-panel_desc">伊藤俊太郎</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+                    </ul>
+        
+              
+
+                  <ul class="p-panel_list jsc_panel_page c-panel c-panel_hover">
+          
+          <li class="c-panel_item item_1">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_8-6.jpg">
+            <a class="c-panel_info_area" href="../../people/ming-zhong.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">“生活者发想”理念</div>
+                                <div class="c-panel_desc">钟鸣</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_2">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item_6-6.jpg">
+            <a class="c-panel_info_area" href="../../people/elvis-sequeira.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">从广告商到概念公司</div>
+                                <div class="c-panel_desc">Elvis Sequeira</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_3">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/Masaru_Kitakaze_674-5-300x300.jpg">
+            <a class="c-panel_info_area" href="../../people/masaru-kitakaze.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">我们是否能做到人工智能做不到的事情？</div>
+                                <div class="c-panel_desc">北风 胜</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_4">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/MikhailNiktin_Squaremono.jpg">
+            <a class="c-panel_info_area" href="../../people/mikhail-nikitin.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">不为人知的服务：名声大，认知少</div>
+                                <div class="c-panel_desc">Mikhail Nikitin</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+              
+
+        
+          <li class="c-panel_item item_5">
+            <img src="../../wp_admin/wp-content/uploads/2017/09/item-1-e1506410444319-5-300x300.png">
+            <a class="c-panel_info_area" href="../../people/ayami-nakao.html">
+              <div class="c-panel_info">
+                                  <div class="c-panel_title">创意的缔造者</div>
+                                <div class="c-panel_desc">中尾文美</div>
+              </div>
+              <div class="c-panel_link"></div>
+            </a>
+          </li>
+
+          
+      
+    </div>
+
+    <div class="c-outside p-panel_more u-show_sp"><a class="c-link_frame c-frame_arrow c-frame_white" href="../../people/index.html">查看更多信息</a></div>
+  </div>
+
+
+  <!-- Our Network -->
+
+  <div class="jsc_scroll_view_target jsc_animate_order_item" data-animate-order="fadeUp">
+    <div class="our_network jsc_network_map">
+      <div class="c-outside our_network_head">
+        <h2>全球运营网络</h2>
+      </div>
+      <div class="c-outside our_network_more u-show_pc"><a class="c-link_frame c-frame_arrow p-top_news_see-more-btn" href="../../network/index.html">查看全球运营网络</a></div>
+      <div class="c-outside our_network_map">
+        <img src="../img/idx/network/map.jpg">
+        <a class="our_network_link link_europe_middle_east jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="欧洲和中东">欧洲和中东</a>
+        <a class="our_network_link link_east_asia jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="东亚">东亚</a>
+        <a class="our_network_link link_north_america jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="北美">北美</a>
+        <a class="our_network_link link_japan" href="../../network/japan/index.html" target="_blank">日本</a>
+        <a class="our_network_link link_south_asia jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="南亚">南亚</a>
+        <a class="our_network_link link_south_east_asia jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="东南亚">东南亚</a>
+        <a class="our_network_link link_oceania jsc_network_map_trigger" href="../../work/rice-code/index.html#" data-network-map-key="大洋洲">大洋洲</a>
+        <div class="our_network_modal_bg jsc_network_map_bg"></div>
+        <div class="our_network_modal jsc_network_map_target"></div>
+      </div>
+      <div class="c-outside our_network_info">
+        <p class="info_item"><span class="info_value">20个</span>国家和地区</p>
+        <p class="info_item"><span class="info_value">150多家</span>办事处</p>
+        <p class="info_item"><span class="info_value">10,000多名</span>专家</p>
+      </div>
+      <div class="c-outside u-show_sp"><a class="our_network_more c-link_frame c-frame_arrow" href="../../network/index.html">查看全球运营网络</a></div>
+    </div>
+  </div>
+
+
+
+  <!-- Contact Us -->
+
+  <div class="jsc_scroll_view_target jsc_animate_order_item" data-animate-order="fadeUp">
+    <div class="contact_us jsc_smooth_scroll_target" data-smooth_scroll-point="contact_us">
+      <div class="contact_us_head">
+        <h2>联系我们</h2>
+      </div>
+      <div class="u-show_pc jsc_contact_select_pc">
+        <div class="contact_us_select_area">
+          <div class="contact_us_box">
+            <div class="contact_us_box_head">选择国家/地区</div>
+            <div class="contact_us_select_wrap">
+              <div class="c-loader_area jsc_loader_animation" data-loader-end-event="contact_us_set"></div>
+              <ul class="contact_us_select jsc_contact_select_pc_contry"></ul>
+            </div>
+          </div>
+          <div class="contact_us_box is_disabled">
+            <div class="contact_us_box_head">选择公司</div>
+            <div class="contact_us_select_wrap">
+              <ul class="contact_us_select jsc_contact_select_pc_company"></ul>
+            </div>
+          </div>
+          <div class="contact_us_box is_disabled">
+            <div class="contact_us_box_head">联系方式</div>
+            <div class="contact_us_select_wrap">
+              <ul class="contact_us_select jsc_contact_select_pc_result"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-show_sp c-outside jsc_contact_select_sp">
+        <div class="contact_us_select_box is_disabled">
+          <div class="contact_us_select_title">1 选择国家/地区</div>
+          <div class="c-select_box jsc_contact_select_sp_contry"></div>
+        </div>
+        <div class="contact_us_select_box is_disabled">
+          <div class="contact_us_select_title">2 选择公司</div>
+          <div class="c-select_box jsc_contact_select_sp_company">
+            <label>
+              <select class="c-link_frame c-frame_arrow c-frame_white" name="">
+                <option value="">选择公司</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="contact_us_select_box is_disabled">
+          <div class="contact_us_select_title">3 联系方式</div>
+          <ul class="contact_us_select_result jsc_contact_select_sp_result"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+<footer class="footer">
+  <div class="c-outside p-page_top"><a class="p-page_top_link jsc_smooth_scroll_trigger" href="../../work/rice-code/index.html" data-smooth_scroll-target="TOP"><img src="../img/common/icn/footer_page_top.png"/></a></div>
+  <div class="c-outside footer_links">
+    <ul class="c-flex c-col_4">
+      <li class="c-flex_item"><a class="c-link_frame c-frame_arrow" href="../../about/index.html">关于博报堂</a></li>
+      <li class="c-flex_item"><a class="c-link_frame c-frame_arrow" href="../../network/index.html">全球运营网络</a></li>
+      <li class="c-flex_item"><a class="c-link_frame c-frame_window" href="https://www.hakuhodody-holdings.co.jp/english/" target="_blank">博报堂DY Holdings（英文）</a></li>
+      <li class="c-flex_item"><a class="c-link_frame c-frame_window" href="http://www.hakuhodody-media.co.jp/english/" target="_blank">博报堂DY Media Partners（英文）</a></li>
+    </ul>
+    <div class="footer_bottom">
+      <ul class="footer_bottom_links">
+        <li class="link_item"><a href="../../terms/index.html">使用条款及条件</a></li>
+        <li class="link_item"><a href="../../policy/index.html">隐私政策</a></li>
+        <li class="link_item"><a href="../../sitemap/index.html">网站地图</a></li>
+        <li class="link_item"><a class="jsc_smooth_scroll_trigger" href="../../work/rice-code/index.html#contact_us" data-smooth_scroll-target="contact_us">联系我们</a></li>
+      </ul>
+      <div class="footer_copyright">
+        <div class="small">&copy; <span class="jsc_get_year"></span> Hakuhodo Inc. All rights reserved. <a href="http://www.miitbeian.gov.cn/" target="_blank" style="display:inline;">沪ICP备09037678号-1</a></div>
+      </div>
+    </div>
+  </div>
+</footer></div>
+</body>
+<script src="../js/app.js"></script>
+</head>
+</html>

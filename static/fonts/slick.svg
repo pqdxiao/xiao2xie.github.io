@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-CN" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-CN" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="BCTCVIP System" name="description"/>
+<meta content="BCTCVIP" name="author"/>
+<meta name="renderer" content="webkit">
+<!-- base href="/" / -->
+<link rel="stylesheet" type="text/css" href="/fonts/font.css" />
+<link rel="stylesheet" type="text/css" href="/js_src/plugins/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="/js_src/plugins/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/pages/error.css" />
+<link rel="shortcut icon" href="/favicon.ico?t=1645278161"/>
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="page-500-full-page">
+
+<div class="row">
+    <div class="col-md-12 page-500">
+        <div class="number">
+            404        </div>
+        <div class="details">
+            <h3>
+                页面不存在            </h3>
+            <p style="margin-top:15px; min-height:40px; line-height:20px;">
+                                    服务器错误，请稍候再试！                            </p>
+            <p>
+                <a href="/">
+                    <i class="fa fa-home"></i>
+                    首页                </a>
+                &nbsp; | &nbsp;
+                <a href="javascript:document.location.reload();">
+                    <i class="fa fa-refresh"></i>
+                    刷新                </a>
+                &nbsp; | &nbsp;
+                <a href="javascript:history.back();">
+                    <i class="fa fa-reply"></i>
+                    返回                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- BEGIN JAVASCRIPTS -->
+<!--[if lt IE 9]>
+<script src="/js_src/plugins/respond.min.js?t=1645278161"></script>
+<script src="/js_src/plugins/excanvas.min.js?t=1645278161"></script>
+<![endif]-->
+<script type="text/javascript">
+window.SOURCE = window.SOURCE || {};
+SOURCE.debug     = true;
+SOURCE.lang      = 'zh-cn';
+SOURCE.baseUrl   = '/';
+SOURCE.staticUrl = '/';
+SOURCE.translate = function(text, values) {
+    var data = {"BCTCVIP System":"BCTCVIP系统","Home":"首页","My Profile":"个人资料","My Inbox":"我的消息","My Tasks":"我的任务","Log Out":"退出","No Title":"无标题","Quick Links":"快速导航","Account Login":"登录账号","Users Search":"用户搜索","Add User":"新增用户","Account":"账户名","IB Name":"代理姓名","IB Type":"代理类型","Type":"类型","IB Account":"IB账号","IB name":"IB户名","Individual":"个人","Institution":"机构","Name":"姓名","User Name":"登录名","Email":"邮箱","Mobile":"手机","Basic Information":"基本资料","Institution Name":"机构名称","Bank Information":"银行资料","Account No.":"银行账号","Please select":"请选择","Choose file":"选择文件","E.G.":"示例","Sub-IBs":"子代理","Phone number":"联系电话","Password":"修改密码","Logout":"退出登录","Message":"消息中心","Username":"用户名","User Profile":"用户资料","Your input is not correct":"您输入的信息有误","IB Business Application":"代理业务申请","Forex IB Account":"外汇代理账户","Loan":"贷款","Stock":"股票经纪","Forex":"外汇代理","RMB":"人民币","USD":"美金","MT4 Account":"MT4账号","Receiver's MT4 Account":"收款人MT4账号","There is something wrong with our site. Please try again later or contact customer service":"我们的网站出了点问题，请稍后再试或联系客服","The server is busy. Please try again later":"服务器忙，请稍后再试","Sorry, server error. You can link1_start refresh link_end or return to link2_start previous page link_end.":"抱歉，服务器出了点问题。您可以link1_start刷新link_end试试，返回link2_start上一页link_end","Sorry, this page can not be opened. You can link1_start refresh link_end or return to link2_start previous page link_end.":"抱歉，当前页面无法打开。您可以link1_start刷新link_end试试，返回link2_start上一页link_end","User":"用户","Users":"用户","Role":"角色","Roles":"角色","Resource":"资源","Resources":"资源","Customer":"客户","Customers":"客户","Department":"部门","Departments":"部门","Team":"团队","Teams":"团队","Offices":"办公室","Office":"办公室","Country":"国家","City":"城市","Address":"地址","Telephone":"电话号码","Yes":"是","No":"否","Actions":"操作","Status":"状态","View":"查看","Detail":"详情","Add":"新增","New":"增加","Append":"追加","Insert":"插入","Create":"创建","Edit":"编辑","Follow":"跟进","Modify":"编辑","Assign":"分配","Transfer":"转移","Permit":"权限","Update":"更新","Delete":"删除","Remove":"移除","Search":"搜索","Filter":"筛选","Ignore":"忽略","Confirm":"确认","OK":"确定","I Know":"知道了","Submit":"提交","Save Changes":"保存修改","Upload":"上传","Upload File...":"上传文件...","Download":"下载","Reset":"重置","去开通":"去开通","Cancel":"取消","Close":"关闭","Retry":"重试","Refresh":"刷新","Back":"返回","System":"系统","Unknown":"未知","Lock":"锁定","Unlock":"解锁","Restore":"恢复","Select...":"请选择...","Search Result":"搜索结果","Sort":"排序","Display Order":"显示顺序","Records":"记录数","Node":"节点","ASC":"ASC - 升序","DESC":"DESC - 降序","Female":"女","Male":"男","Date":"日期","Created At":"创建时间","Modified At":"更新时间","Last Modified":"上次修改","View More":"查看更多","View Detail":"查看详情","Note":"备注","Operator":"操作员","Keywords":"关键字","Keyword":"关键字","Previous":"上一页","Next":"下一页","First":"第一页","Last":"下一页","#n years":"#n 年","#n months":"#n 月","#n weeks":"#n 周","#n days":"#n 天","#n hours":"#n 小时","#n mins":"#n 分钟","#n secs":"#n 秒","Just Now":"刚刚","Monday":"星期一","Tuesday":"星期二","Wednesday":"星期三","Thursday":"星期四","Friday":"星期五","Saturday":"星期六","Sunday":"星期日","after #n years":"剩 #n 年","after #n months":"剩 #n 月","after #n weeks":"剩 #n 周","after #n days":"剩 #n 天","after #n hours":"剩 #n 小时","after #n mins":"剩 #n 分钟","after #n secs":"剩 #n 秒","You have #n new messages":"您有 #n 条新消息","System Message":"系统消息","See all messages":"查看所有消息","You have #n new notifications":"您有 #n 条新通知","See all notifications":"查看所有通知","You have #n pending tasks":"您有 #n 个进行中的任务","See all tasks":"查看所有任务","#p% Complete":"完成 #p%","Unknown Error":"未知错误","Network Error: ":"网络错误：","Api Request Failed":"API 请求失败","Operation succeed":"操作执行成功！","Date Recycle Success":"数据回收成功!","LOADING...":"加载中...","Sorry !":"抱歉！","No Data":"暂无数据","Click to":"点击这里","Find User":"查找用户","Email\/Realname":"Email\/姓名","Please enter the email or realname":"请输入用户 Email 或姓名","Please enter the uid or email or phone":"请输入用户 Uid 或Email 或电话","No records found!":"暂无相关资料！","Are you sure you want to delete this record?":"您确定要删除该条记录吗？","The larger the number the more front":"数字越大，显示越靠前","Invalid sort number":"无效的排序值","Total :total records":"共 :total 条记录","Page :current of :pages, Found total :total records":"共找到 :total 条记录，:current\/:pages 页","The record not found":"未找到相关记录","Do not have permission to perform this operation":"没有执行该操作的权限","You need to login to access this page.":"您需要登录后才能执行该操作！","Confirm ?":"确认？","Success !":"操作成功！","Error !":"发生错误！","Warning !":"警告！","Message !":"提示信息！","Message<h\/>":"操作信息","Back<h\/>":"返回上一页","Required !":"不能为空！","Wrong format !":"格式错误！","Invalid value !":"无效值","Unkown Error !":"未知错误！","System Management":"系统管理","Dashboard":"控制台","Users Listing":"用户列表","Roles Setting":"角色设置","Access Control":"权限控制","Register At":"注册时间","Real Name":"真实姓名","acl.group.system":"系统角色","acl.group.bctcadmin":"品源链管理后台","acl.group.user":"用户组","acl.resource.system":"系统设置","acl.resource.system.user":"用户管理","acl.resource.system.role":"角色设置","acl.resource.system.access-rule":"权限控制","acl.resource.system.other":"其他","acl.resource.bctcadmin":"品源链","acl.action.list":"列表","acl.action.add":"添加","acl.action.edit":"编辑","acl.action.del":"删除","acl.action.my-orders":"我的订单","acl.action.agent-level":"代理级别","acl.action.maintain-type":"维修方法","acl.action.breakdown-type":"故障类型","acl.action.config":"系统配置","acl.action.check":"审核","acl.action.detail":"详情","acl.action.delete":"删除","acl.action.product-category":"产品分类","acl.action.product-list":"产品列表","acl.action.materiel-list":"物料列表","acl.action.materiel-category":"物料分类","acl.action.import":"报表导入","acl.action.materiel-my":"我的物料","acl.action.create":"新增","acl.action.audit":"分捡","acl.action.settle-list":"结算列表","acl.action.settle-my":"我的结算","acl.action.repair-list":"返修分配","acl.action.repair-my":"我的维修","acl.action.issue-my":"我的工单","acl.action.repair-create":"新增维修","acl.action.contact":"联系我们","acl.action.question":"常见问题","acl.action.feedback":"在线留言","acl.action.network":"服务网点","acl.action.category":"分类","acl.action.buy":"采购","acl.action.statement":"法律声明","acl.action.privacy":"隐私条款","acl.action.adjustment":"库存调整","acl.action.repair-issue":"生成维修工单","acl.action.insured":"保价","acl.action.children":"子账户","acl.action.maintenance":"高级别维修","acl.action.package":"打包","acl.action.sales-contract":"销售合同","acl.action.check-contract":"合同审批","acl.action.logs":"日志","acl.action.cancel":"作废","acl.action.sales_statistics":"每日销售总表","acl.action.day_return_statistics":"拨比每日返还表","acl.action.product_sales_statistics":"套餐每日销售报表","acl.action.product_statistics":"销售套餐明细表","acl.action.day_return_info_statistics":"拨比每日倍数表","acl.action.shop_sales_statistics":"店铺每日销售总表","acl.action.shop_sales_info_statistics":"店铺每日销售详细报表","acl.action.shop_statistics":"店铺销售统计","Unauthorized":"没有访问权限","Forbidden":"禁止访问","Not Found":"页面不存在","Internal Server Error":"发生错误","Exception Trace":"错误分析","Server Error, please try again !":"服务器错误，请稍候再试！","Account is required.":"登录账号不能为空","Password is required.":"密码不能为空","Invalid login account.":"无效的登录帐号","Account has been locked, please contact the administrator.":"账号已被锁定，请联系管理员","Account has been locked, please try again after :minute minutes.":"帐号已被锁定，请在:minute分钟后重试","Account or password error.":"账号或密码错误","Account or password error, you can also try :limit times.":"账号或密码错误，您还可以重试:limit次","Password is invalid, please contact the administrator to modify.":"密码无效，请联系管理员修改","Your password is insecure, please change your password immediately.":"您的密码不安全，请立即修改!","Change Password":"修改密码"};
+    if (typeof data[text] !== 'undefined') { text = data[text]; }
+    if (typeof values === 'object') { for (key in values) { text = text.replace(key, values[key]); } }
+    return text;
+};
+window.__ = window.__ || SOURCE.translate;
+</script>
+<script type="text/javascript" src="/js_src/require/bootup.js?t=1645278161"></script>
+<script type="text/javascript">
+new BootUp([
+    '/js_src/require/require.js',
+    '/js_src/config.js',
+    '/js_src/empty.js'
+], {
+    version: '1645278161',
+    success: function () {
+        require({
+            baseUrl: '/js_src/',
+            urlArgs: '1645278161'
+        });
+    }
+});
+</script><!-- END JAVASCRIPTS -->
+
+</body>
+<!-- END BODY -->
+
+</html>
+
